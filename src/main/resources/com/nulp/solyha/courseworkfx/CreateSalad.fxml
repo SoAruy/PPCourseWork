@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="235.0" prefWidth="316.0" style="-fx-background-color: #315912;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nulp.solyha.courseworkfx.controller.CreateSaladController">
+   <children>
+      <AnchorPane layoutY="26.0" prefHeight="210.0" prefWidth="316.0" style="-fx-background-color: fafafa;">
+         <children>
+            <Text layoutX="90.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter salad name">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="CreateSaladTextField" layoutX="61.0" layoutY="78.0" prefHeight="26.0" prefWidth="194.0" />
+            <Button fx:id="CreateSaladSubmitButton" layoutX="14.0" layoutY="171.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="65.0" text="Submit" />
+            <Button fx:id="CreateSaladCancelButton" layoutX="235.0" layoutY="171.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="66.0" text="Cancel" />
+         </children>
+      </AnchorPane>
+      <Text fill="WHITE" layoutX="14.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create New Salad">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

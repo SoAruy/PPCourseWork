@@ -1,11 +1,29 @@
 package com.nulp.solyha.courseworkfx.entities;
 
 public class Vegetable {
+    private int id;
+    private int saladId;
     private String name;
     private String color;
     private double weight;
     private double calCapPerHundGram;
     private double proteins, fats, carbs;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getSaladId() {
+        return saladId;
+    }
+
+    public void setSaladId(int saladId) {
+        this.saladId = saladId;
+    }
 
     public String getName() {
         return name;
@@ -73,8 +91,41 @@ public class Vegetable {
         this.carbs = carbs;
     }
 
-    public double getCalorificCapacity(){
-        return weight * calCapPerHundGram;
+    public Vegetable(int id, int saladId, String name, String color, double weight, double calCapPerHundGram, double proteins, double fats, double carbs) {
+        this.id = id;
+        this.saladId = saladId;
+        this.name = name;
+        this.color = color;
+        this.weight = weight;
+        this.calCapPerHundGram = calCapPerHundGram;
+        this.proteins = proteins;
+        this.fats = fats;
+        this.carbs = carbs;
+    }
+
+    public String getStringId(){
+        return Integer.toString(this.id);
+    }
+
+    public String getStringSaladId(){
+        return Integer.toString(saladId);
+    }
+
+    public String getStringWeight() {
+        return Double.toString(weight);
+    }
+
+    public String getStringCalCap() {
+        return Double.toString(calCapPerHundGram);
+    }
+    public String getStringProteins() {
+        return Double.toString(proteins);
+    }
+    public String getStringFats() {
+        return Double.toString(fats);
+    }
+    public String getStringCarbs() {
+        return Double.toString(carbs);
     }
 }
 

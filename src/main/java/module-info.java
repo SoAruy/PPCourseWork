@@ -1,6 +1,7 @@
 module com.nulp.solyha.courseworkfx {
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.sql;
 
 
     opens com.nulp.solyha.courseworkfx to javafx.fxml;

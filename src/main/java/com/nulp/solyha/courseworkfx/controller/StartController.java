@@ -6,7 +6,6 @@ import java.util.ResourceBundle;
 import com.nulp.solyha.courseworkfx.Main;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.stage.Stage;
 
 public class StartController {
 

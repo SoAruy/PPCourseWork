@@ -48,20 +48,4 @@ public class Main extends Application {
         stage.close();
     }
 
-    public static void OpenNewScene(String str){
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(str));
-
-        try {
-            fxmlLoader.load();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        Stage stage = new Stage();
-        stage.setTitle("Course Work");
-        stage.setScene(new Scene(fxmlLoader.getRoot()));
-        stage.getIcons().add(new Image("C:\\Users\\user\\IdeaProjects\\CourseWorkFX\\src\\main\\resources\\assets\\mainIcon.png"));
-        stage.setResizable(false);
-        stage.show();
-    };
 }
