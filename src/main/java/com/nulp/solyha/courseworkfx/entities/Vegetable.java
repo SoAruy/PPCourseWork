@@ -73,9 +73,7 @@ public class Vegetable {
         this.fats = fats;
     }
 
-    public double getCarbs() {
-        return carbs;
-    }
+    public double getCarbs() {return carbs;}
 
     public void setCarbs(double carbs) {
         this.carbs = carbs;

@@ -1,24 +1,11 @@
 package com.nulp.solyha.courseworkfx.entities;
 
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.Iterator;
-import java.util.List;
-
 public class Salad {
     private int id;
     private String name;
     private double weight;
 
     public Salad() {
-    }
-
-    public String getIdString(){
-        return Integer.toString(id);
-    }
-
-    public String getWeightString(){
-        return Double.toString(weight);
     }
 
     public Salad(String name){
@@ -54,5 +41,13 @@ public class Salad {
 
     public void setWeight(double weight) {
         this.weight = weight;
+    }
+
+    public String getIdString(){
+        return Integer.toString(id);
+    }
+
+    public String getWeightString(){
+        return Double.toString(weight);
     }
 }
